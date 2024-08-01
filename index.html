@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    width: 500px;
+    display: block;
+    margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        width: 750px;
+    }
+}
+    </style>
+</head>
+<body style="background-color: black;"  oncontextmenu="return false">
+    <script>
+        let img = document.createElement('img');
+        img.src = "LogoBlocked.png";
+        document.body.appendChild(img);
+    </script>
+</body>
+</html>
